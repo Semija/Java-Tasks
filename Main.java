@@ -11,10 +11,10 @@ public class Main {
         do {
 
             do {
-                System.out.print("Введите номер группы заданий (1-10): ");
+                System.out.print("Введите номер группы заданий (1-6): ");
                 input = in.nextInt();
-                if (input < 0 || input > 10) System.out.println("Ошибка, введите число от 1 до 10 !");
-            } while (input < 0 || input > 10);
+                if (input < 0 || input > 6) System.out.println("Ошибка, введите число от 1 до 6 !");
+            } while (input < 0 || input > 6);
             System.out.println();
 
             switch (input) {
@@ -131,7 +131,6 @@ public class Main {
                     System.out.println("boxSeq(0) -> " + TasksGroup2.boxSeq(0));
                     System.out.println("boxSeq(1) -> " + TasksGroup2.boxSeq(1));
                     System.out.println("boxSeq(2) -> " + TasksGroup2.boxSeq(2));
-
                     break;
 
                 case 3:
@@ -209,9 +208,9 @@ public class Main {
                     System.out.println("overTime([13.25, 15, 30, 1.5]) -> " + TasksGroup4.overTime(array443));
 
                     System.out.println("Задание 5:");
-                    System.out.println("overTime(\"205 pounds\",\"73 inches\") -> " + TasksGroup4.BMI("205 pounds","73 inches"));
-                    System.out.println("overTime(\"55 kilos\",\"1.65 meters\") -> " + TasksGroup4.BMI("55 kilos","1.65 meters"));
-                    System.out.println("overTime(\"154 pounds\",\"2 meters\") -> " + TasksGroup4.BMI("154 pounds","2 meters"));
+                    System.out.println("BMI(\"205 pounds\",\"73 inches\") -> " + TasksGroup4.BMI("205 pounds","73 inches"));
+                    System.out.println("BMI(\"55 kilos\",\"1.65 meters\") -> " + TasksGroup4.BMI("55 kilos","1.65 meters"));
+                    System.out.println("BMI(\"154 pounds\",\"2 meters\") -> " + TasksGroup4.BMI("154 pounds","2 meters"));
 
                     System.out.println("Задание 6:");
                     System.out.println("bugger(39) -> " + TasksGroup4.bugger(39));
@@ -234,6 +233,70 @@ public class Main {
                     System.out.println("Задание 10:");
                     System.out.println("countUniqueBooks(\"AZYWABBCATTTA\",'A') -> " + TasksGroup4.countUniqueBooks("AZYWABBCATTTA",'A'));
                     System.out.println("countUniqueBooks(\"ZZABCDEF\",'Z') -> " + TasksGroup4.countUniqueBooks("ZZABCDEF",'Z'));
+                    break;
+
+                case 5:
+                    System.out.println("Задание 1:");
+                    System.out.println("encrypt(\"Hello\") -> " + Arrays.toString(TasksGroup5.encrypt("Hello")));
+                    System.out.println("encrypt(\"Sunshine\") -> " + Arrays.toString(TasksGroup5.encrypt("Sunshine")));
+                    int[] array511 ={72,33,-73,84,-12,-3,13,-13,-68};
+                    System.out.println("decrypt([72, 33, -73, 84, -12, -3, 13, -13, -68]) -> " + TasksGroup5.decrypt(array511));
+
+                    System.out.println("Задание 2:");
+                    System.out.println("canMove(\"Rook\",\"A8\",\"H8\") -> " + TasksGroup5.canMove("Rook","A8","H8"));
+                    System.out.println("canMove(\"Bishop\",\"A7\",\"G1\") -> " + TasksGroup5.canMove("Bishop","A7","G1"));
+                    System.out.println("canMove(\"Queen\",\"C4\",\"D6\") -> " + TasksGroup5.canMove("Queen","C4","D6"));
+
+                    System.out.println("Задание 3:");
+                    System.out.println("canComplete(\"butl\",\"beautiful\") -> " + TasksGroup5.canComplete("butl","beautiful"));
+                    System.out.println("canComplete(\"butlz\",\"beautiful\") -> " + TasksGroup5.canComplete("butlz","beautiful"));
+                    System.out.println("canComplete(\"tulb\",\"beautiful\") -> " + TasksGroup5.canComplete("tulb","beautiful"));
+                    System.out.println("canComplete(\"bbutl\",\"beautiful\") -> " + TasksGroup5.canComplete("bbutl","beautiful"));
+
+                    System.out.println("Задание 4:");
+                    int[] array541 ={16, 28};
+                    System.out.println("sumDigProd(16, 28) -> " + TasksGroup5.sumDigProd(array541));
+                    int[] array542 ={0};
+                    System.out.println("sumDigProd(0) -> " + TasksGroup5.sumDigProd(array542));
+                    int[] array543 ={1,2,3,4,5,6};
+                    System.out.println("sumDigProd(1,2,3,4,5,6) -> " + TasksGroup5.sumDigProd(array543));
+
+                    System.out.println("Задание 5:");
+                    String[] array551 = {"toe","ocelot", "maniac"};
+                    System.out.println("sameVowelGroup([\"toe\",\"ocelot\", \"maniac\"]) -> " + Arrays.toString(TasksGroup5.sameVowelGroup(array551)));
+                    String[] array552 = {"many","carriage","emit","apricot","animal"};
+                    System.out.println("sameVowelGroup([\"many\",\"carriage\",\"emit\",\"apricot\",\"animal\"]) -> " + Arrays.toString(TasksGroup5.sameVowelGroup(array552)));
+
+                    System.out.println("Задание 6:");
+                    System.out.println("validateCard(1234567890123456) -> " + TasksGroup5.validateCard(1234567890123456L));
+                    System.out.println("validateCard(1234567890123452) -> " + TasksGroup5.validateCard(1234567890123452L));
+
+                    System.out.println("Задание 7:");
+                    System.out.println("numToEng(0) -> " + TasksGroup5.numToEng(0));
+                    System.out.println("numToEng(18) -> " + TasksGroup5.numToEng(18));
+                    System.out.println("numToEng(126) -> " + TasksGroup5.numToEng(126));
+                    System.out.println("numToEng(909) -> " + TasksGroup5.numToEng(909));
+                    System.out.println("numToRu(0) -> " + TasksGroup5.numToRu(0));
+                    System.out.println("numToRu(18) -> " + TasksGroup5.numToRu(18));
+                    System.out.println("numToRu(126) -> " + TasksGroup5.numToRu(126));
+                    System.out.println("numToRu(909) -> " + TasksGroup5.numToRu(909));
+
+                    System.out.println("Задание 8:");
+                    System.out.println("getSha256Hash(\"password123\") -> " + TasksGroup5.getSha256Hash("password123"));
+                    System.out.println("getSha256Hash(\"Fluffy@home\") -> " + TasksGroup5.getSha256Hash("Fluffy@home"));
+                    System.out.println("getSha256Hash(\"Hey dude !\") -> " + TasksGroup5.getSha256Hash("Hey dude!"));
+
+                    System.out.println("Задание 9:");
+                    System.out.println("correctTitle(\"jOn Show, kINg IN thE noRth.\") -> " + TasksGroup5.correctTitle("jOn Show, kINg IN thE noRth."));
+                    System.out.println("correctTitle(\"sansa stark, lady of winterfell.\") -> " + TasksGroup5.correctTitle("sansa stark, lady of winterfell."));
+                    System.out.println("correctTitle(\"TYRION LANNISTER, HAND OF THE QUEEN.\") -> " + TasksGroup5.correctTitle("TYRION LANNISTER, HAND OF THE QUEEN."));
+
+                    System.out.println("Задание 10:");
+                    System.out.println("hexLattice(1) -> " + TasksGroup5.hexLattice(1));
+                    System.out.println("hexLattice(7) -> " + TasksGroup5.hexLattice(7));
+                    System.out.println("hexLattice(19) -> " + TasksGroup5.hexLattice(19));
+                    System.out.println("hexLattice(21) -> " + TasksGroup5.hexLattice(21));
+
 
                     break;
             }

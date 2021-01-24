@@ -121,29 +121,6 @@ public class TasksGroup4 {
                     weight = Double.parseDouble(sm1[0]);
                 }
         }
-
-        String var10;
-        switch((var10 = sm2[1]).hashCode()) {
-            case -1184266632:
-                if (var10.equals("inches")) {
-                    height = Double.parseDouble(sm2[0]) / 39.37D;
-                }
-                break;
-            case -1077557750:
-                if (var10.equals("meters")) {
-                    height = Double.parseDouble(sm2[0]);
-                }
-                break;
-            case -982397081:
-                if (var10.equals("pounds")) {
-                    weight = Double.parseDouble(sm2[0]) / 2.205D;
-                }
-                break;
-            case 102052146:
-                if (var10.equals("kilos")) {
-                    weight = Double.parseDouble(sm2[0]);
-                }
-        }
         double bmi = weight / (height * height);
         DecimalFormat df = new DecimalFormat(".#");
         if (bmi < 18.5D) {
@@ -253,7 +230,7 @@ public class TasksGroup4 {
         }
     }
 
-    // 10
+    // 10 общее кол-во ууникальных символов
     static int countUniqueBooks(String s1, char subC) {
         String subS = String.valueOf(subC);
         StringBuilder build = new StringBuilder(s1);
